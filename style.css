@@ -1,0 +1,27 @@
+body {
+    top: 0px;
+    left: 0px;
+    width: 1600px;
+    height: 1195px;
+    /* UI Properties */
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+header {
+    padding-top: 18px;
+    padding-left: 18px;
+    width: 1564px;
+    height: 72px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    opacity: 1;
+}
+.logo {
+    padding-top: 30px;
+    padding-left: 15px;
+    opacity: 1;
+}
+.logo img {
+    width: 211px;
+    height: 48px;
+}
