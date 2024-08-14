@@ -1,27 +1,171 @@
 body {
     top: 0px;
     left: 0px;
-    width: 1600px;
-    height: 1195px;
+    width: 100%;
+    /* height: 1195px; */
     /* UI Properties */
     background: #F6F7F8 0% 0% no-repeat padding-box;
-    opacity: 1;
+    /* opacity: 1; */
+}
+#appContent{
+    display: flex;
 }
 header {
-    padding-top: 18px;
-    padding-left: 18px;
-    width: 1564px;
+    /* padding: 18px; */
+    margin: 18px;
+    /* width: 1564px; */
     height: 72px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 70px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 .logo {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-left: 15px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 .logo img {
-    width: 211px;
-    height: 48px;
+    margin-top: 11px;
+    /* width: 211px;
+    height: 48px; */
+}
+.centerMenu {
+    display: flex;
+    width: 42%;
+    margin-top: -37px;
+    margin-left: 448px;
+}
+.centerMenuOption {
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+    padding-left: 40px;
+    cursor: pointer;
+}
+/* .centerMenuOptionPatient {
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+    opacity: 1;
+    margin-left: 40px;
+    cursor: pointer;
+} */
+.patients {
+    font: normal normal 800 24px/33px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+}
+.menuIcon {
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+.rightMenu {
+    display: flex;
+    justify-content: end;
+    margin-top: -30px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.name {
+    font: normal normal bold 14px/19px Manrope;
+    letter-spacing: 0;
+    color: #072635;
+    text-align: left;
+}
+.spec {
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #707070;
+}
+.rightMenuOptions {
+    padding: 10px 20px;
+}
+.dots {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+nav {
+    margin-top: 15px;
+    margin-left: 18px;
+    width: 367px;
+    height: 766px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+}
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 13px 15px 20px;
+}
+.searchIcon {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+}
+.patientList {
+    height: 766px;
+    /* margin-left: 15px; */
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+nav ::-webkit-scrollbar {
+    width: 5px;
+}
+nav ::-webkit-scrollbar-track {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+}
+
+nav ::-webkit-scrollbar-thumb {
+    background: #072635 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+}
+.patient {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px 20px 20px;
+}
+.patientJessica {
+    background: #D8FCF7 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px 20px 20px;
+}
+.patientInfo {
+    display: flex;
+}
+.centerDiv{
+    display: block;
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 766px;
+    height: 673px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+}
+
+.centerDivHeader{
+    padding: 15px 13px 15px 20px;
+}
+.diagnosticHistoryTitle {
+    text-align: left;
+    font: normal normal 800 24px/33px Manrope;
+    letter-spacing: 0px;
+    color: #072635;
+}
+.bpDiv {
+    width: 726px;
+    height: 298px;
+    background: #F4F0FE 0% 0% no-repeat padding-box;
+    margin: 20px;
+    border-radius: 12px;
 }

@@ -6,6 +6,9 @@
     <meta name="viewport" content=
 "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Tech.Care</title>
 </head>
 
@@ -15,36 +18,211 @@
             <span class="logo">
                 <img src="img/TestLogo.png" alt="">
             </span>
-        </header>
-        <nav>
-            <!-- <ul>
-                <li>
-                    <a href="#" onclick=
-                    "changeContent('home')">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onclick=
-                    "changeContent('about')">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="#" onclick=
-                    "changeContent('contact')">
-                        Contact
-                    </a>
-                </li>
-            </ul> -->
-        </nav>
-        <main>
-            <div id="content">
-
+            <div class="centerMenu">
+                <div class="centerMenuOption" onclick="centerMenuClick('overview')">
+                    <img class="menuIcon" src="img/icons/home_FILL0_wght300_GRAD0_opsz24.png">
+                    <span class="menuLabel">Overview</span>
+                </div>
+                <div class="centerMenuOption" onclick="centerMenuClick('patients')">
+                    <img class="menuIcon" src="img/icons/group_FILL0_wght300_GRAD0_opsz24.png">
+                    <span class="menuLabel">Patients</span>
+                </div>
+                <div class="centerMenuOption" onclick="centerMenuClick('schedule')">
+                    <img class="menuIcon" src="img/icons/calendar_today_FILL0_wght300_GRAD0_opsz24.png">
+                    <span class="menuLabel">Schedule</span>
+                </div>
+                <div class="centerMenuOption" onclick="centerMenuClick('message')">
+                    <img class="menuIcon" src="img/icons/chat_bubble_FILL0_wght300_GRAD0_opsz24.png">
+                    <span class="menuLabel">Message</span>
+                </div>
+                <div class="centerMenuOption">
+                    <img class="menuIcon" src="img/icons/credit_card_FILL0_wght300_GRAD0_opsz24.png">
+                    <span class="menuLabel">Transactions</span>
+                </div>
             </div>
-        </main>
+            <div class="rightMenu">
+                <img src="img/avatars/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png">
+                <div class="profile">
+                    <span class="name">Dr. Jose Simmons</span>
+                    <span class="spec">General Practitioner</span>
+                </div>
+                <div class="rightMenuOptions">
+                    <img src="img/icons/settings_FILL0_wght300_GRAD0_opsz24.png">
+                    <img class="dots" src="img/icons/more_vert_FILL0_wght300_GRAD0_opsz24.png">
+                </div>
+            </div>
+        </header>
+        <div id="appContent">
+            <nav>
+                <div class="navHeader">
+                    <span class="patients">Patients</span>
+                    <img class="searchIcon" src="img/icons/search_FILL0_wght300_GRAD0_opsz24.png">
+                </div>
+                <div class="patientList">
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 8.png">
+                            <div class="profile">
+                                <span class="name">Emily Williams</span>
+                                <span class="spec">Female, 18</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 1.png">
+                            <div class="profile">
+                                <span class="name">Ryan Johnson</span>
+                                <span class="spec">Male, 45</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 3.png">
+                            <div class="profile">
+                                <span class="name">Brandon Mitchell</span>
+                                <span class="spec">Male, 36</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patientJessica">
+                        <div class="patientInfo" onclick="getDataJessica()">
+                            <img src="img/avatars/Layer 2.png">
+                            <div class="profile">
+                                <span class="name">Jessica Taylor</span>
+                                <span class="spec">Female, 28</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 6.png">
+                            <div class="profile">
+                                <span class="name">Samantha Johnson</span>
+                                <span class="spec">Female, 56</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 12.png">
+                            <div class="profile">
+                                <span class="name">Ashley Martinez</span>
+                                <span class="spec">Female, 54</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 10.png">
+                            <div class="profile">
+                                <span class="name">Olivia Brown</span>
+                                <span class="spec">Female, 32</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 9.png">
+                            <div class="profile">
+                                <span class="name">Tyler Davis</span>
+                                <span class="spec">Male, 19</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 4.png">
+                            <div class="profile">
+                                <span class="name">Kevin Anderson</span>
+                                <span class="spec">Male, 30</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 5.png">
+                            <div class="profile">
+                                <span class="name">Dylan Thompson</span>
+                                <span class="spec">Male, 36</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/Layer 7.png">
+                            <div class="profile">
+                                <span class="name">Nathan Evens</span>
+                                <span class="spec">Male, 58</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                    <div class="patient">
+                        <div class="patientInfo">
+                            <img src="img/avatars/pexels-photo-1222271.png">
+                            <div class="profile">
+                                <span class="name">Mike Nolan</span>
+                                <span class="spec">Male, 31</span>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="dots" src="img/icons/more_horiz_FILL0_wght300_GRAD0_opsz24.png">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <div class="centerDiv">
+                    <div class="centerDivHeader">
+                        <span class="diagnosticHistoryTitle">Diagnostic History</span>
+                    </div>
+                    <div class="bpDiv">
+
+                    </div>
+                </div>
+                <div class="rightNav">
+    
+                </div>
+            </main>
+        </div>
+        
     </div>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
